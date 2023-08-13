@@ -34,4 +34,15 @@ describe('Basic Login Tests on Orange HRM Application', () => {
       .should('be.visible')
   })
 
+  it('Verify hyperlinks are not broken on Login Page', () => {
+    cy.visit('https://opensource-demo.orangehrmlive.com/')
+
+    // Use the custom command to fetch and log links
+    cy.fetchAndLogLinks()
+  })
+
+  it('Verify Images are not broken on Login Page', () => {
+    cy.visit('https://opensource-demo.orangehrmlive.com/')
+    cy.checkImages()
+  })
 })
