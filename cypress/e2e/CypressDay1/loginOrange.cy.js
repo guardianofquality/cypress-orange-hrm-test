@@ -1,7 +1,7 @@
 describe('Basic Login Tests on Orange HRM Application', () => {
 
   it('Verify Login to the HRM App is working', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/')
+    cy.visit('/')
 
     cy.get('input[placeholder="Username"]').type("Admin")
     cy.get('input[placeholder="Password"]').type("admin123")
@@ -13,7 +13,7 @@ describe('Basic Login Tests on Orange HRM Application', () => {
   })
 
   it('Verify Login to the HRM App with invalid credentials', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/')
+    cy.visit('/')
 
     cy.get('input[placeholder="Username"]').type("Admin")
     cy.get('input[placeholder="Password"]').type("admin1235")
@@ -25,7 +25,7 @@ describe('Basic Login Tests on Orange HRM Application', () => {
   })
 
   it('Login Forgot your password link navigation is working', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/')
+    cy.visit('/')
 
     cy.get('.oxd-text.oxd-text--p.orangehrm-login-forgot-header').click({force:true})
 
@@ -35,14 +35,14 @@ describe('Basic Login Tests on Orange HRM Application', () => {
   })
 
   it('Verify hyperlinks are not broken on Login Page', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/')
+    cy.visit('/')
 
     // Use the custom command to fetch and log links
     cy.fetchAndLogLinks()
   })
 
   it('Verify Images are not broken on Login Page', () => {
-    cy.visit('https://opensource-demo.orangehrmlive.com/')
+    cy.visit('/')
     cy.checkImages()
   })
 })
