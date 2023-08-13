@@ -1,23 +1,36 @@
 # cypress-orange-hrm-test
 
-Sample project to perform web automated tests on Orange HRM application
+Sample project to perform web automated tests on the Orange HRM application.
 
-## Day 1
-We will see in Day one, how to set up your cypress project with node and java script & how to create tests in cypress with basic tests enabled on assertion, hyperlink/image validations and configuring base url in cypress.congig.js.
+## Day 1 - Getting Started
 
-### 1. To set up the cypress project with Node and JS
-`bash npm init`
+In Day 1, we'll set up your Cypress project with Node.js and JavaScript, create basic tests in Cypress, and configure the base URL in `cypress.config.js`
 
-To add Cypress as a dev dependency
-`bash npm install cypress --save-dev`
+### 1. Setting up the Cypress project
 
-Run the node by using command
-`./node_modules/.bin/cypress open` or `npx cypress open`
+- To begin, initialize your project with npm:
+```npm init```
 
-Select the module, I have selected e2e.
+- Next, add Cypress as a development dependency:
+````npm install cypress --save-dev```
 
-### 2.To write tests in Cypress in loginOrange.cy.js file.
+- Run Cypress using the following command:
+```./node_modules/.bin/cypress open```
+OR
+```npx cypress open```
 
-### 3. To use cypress.congig.js for setting up the base url of our app.
+This will open the Cypress Test Runner, where you can manage and run your tests. Select the "e2e" module or any other relevant module.
 
-### 4. To enble basic tests such as hyper link or images are not broken by using Cypress Command.
+### 2. Writing tests in Cypress
+We've provided a sample test in the `loginOrange.cy.js` file. This test covers basic login functionality, but you can add more tests based on your application's features.
+
+### 3. Configuring the base URL
+We use the `cypress.config.js` file to set up the base URL for our application. This makes it easier to write test cases with relative URLs.
+
+### 4. Basic tests: Checking hyperlinks and images
+In Cypress, you can easily check if hyperlinks and images on your application are working as expected. Use the Cypress commands to ensure they are not broken.
+
+
+# How to Contribute
+Your contributions are welcome! If you have suggestions or improvements for this project, feel free to submit issues or pull requests.
+Happy testing!
