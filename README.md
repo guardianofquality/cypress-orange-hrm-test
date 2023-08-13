@@ -8,22 +8,16 @@ In Day 1, we'll set up your Cypress project with Node.js and JavaScript, create 
 
 ### 1. Setting up the Cypress project
 
-To begin, initialize your project with npm:
+- To begin, initialize your project with npm:
+```npm init```
 
-```bash
-npm init
+- Next, add Cypress as a development dependency:
+````npm install cypress --save-dev```
 
-Next, add Cypress as a development dependency:
-
-````bash 
-npm install cypress --save-dev`
-
-Run Cypress using the following command:
-```bash
-./node_modules/.bin/cypress open 
-or 
-``` bash
-npx cypress open
+- Run Cypress using the following command:
+```./node_modules/.bin/cypress open```
+OR
+```npx cypress open```
 
 This will open the Cypress Test Runner, where you can manage and run your tests. Select the "e2e" module or any other relevant module.
 
