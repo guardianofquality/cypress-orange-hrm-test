@@ -4,7 +4,7 @@ Sample project to perform web automated tests on the Orange HRM application.
 
 ## Day 1 - Getting Started
 
-In Day 1, we'll set up your Cypress project with Node.js and JavaScript, create basic tests in Cypress, and configure the base URL in `cypress.json`.
+In Day 1, we'll set up your Cypress project with Node.js and JavaScript, create basic tests in Cypress, and configure the base URL in `cypress.config.js`
 
 ### 1. Setting up the Cypress project
 
@@ -31,7 +31,7 @@ This will open the Cypress Test Runner, where you can manage and run your tests.
 We've provided a sample test in the `loginOrange.cy.js` file. This test covers basic login functionality, but you can add more tests based on your application's features.
 
 ### 3. Configuring the base URL
-We use the `cypress.config.js`` file to set up the base URL for our application. This makes it easier to write test cases with relative URLs.
+We use the `cypress.config.js` file to set up the base URL for our application. This makes it easier to write test cases with relative URLs.
 
 ### 4. Basic tests: Checking hyperlinks and images
 In Cypress, you can easily check if hyperlinks and images on your application are working as expected. Use the Cypress commands to ensure they are not broken.
