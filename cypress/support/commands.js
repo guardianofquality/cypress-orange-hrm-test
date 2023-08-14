@@ -46,3 +46,14 @@ Cypress.Commands.add('checkImages', () => {
       })
     })
   })
+
+  Cypress.Commands.add('loginHRM', (email, pwd) => {
+    cy.visit('/')
+    cy.get('input[placeholder="Username"]').type(email)
+    cy.get('input[placeholder="Password"]').type(pwd)
+    cy.get('button[type="submit"]').click({force:true})
+
+    // Use the "should" command to assert element visibility
+    cy.get('.oxd-userdropdown') // Replace '.element-selector' with the actual selector of the element
+      .should('be.visible')     // Use 'be.visible' to assert that the element is visible
+  })
