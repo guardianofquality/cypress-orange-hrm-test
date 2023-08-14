@@ -50,12 +50,7 @@ To keep our tests clean and avoid duplicate assets such as video or screenshots,
 
 We explored how to enable video recording during test runs. Please note that this feature is particularly effective when running tests using `cypress run` or in a cloud environment.
 
-To enable these features, make sure to configure the appropriate options in your `cypress.config.js`:
-```module.exports = defineConfig({
-  screenshotOnRunFailure: true,
-  trashAssetsBeforeRuns: true,
-  video: true
-});```
+To enable these features, make sure to configure the appropriate options in your `cypress.config.js`
 
 # How to Contribute
 Contributions are welcome! If you have suggestions or improvements for this project, feel free to submit issues or pull requests.
