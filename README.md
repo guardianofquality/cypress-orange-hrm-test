@@ -56,7 +56,7 @@ module.exports = defineConfig({
   screenshotOnRunFailure: true,
   trashAssetsBeforeRuns: true,
   video: true
-});
+});```
 
 # How to Contribute
 Contributions are welcome! If you have suggestions or improvements for this project, feel free to submit issues or pull requests.
