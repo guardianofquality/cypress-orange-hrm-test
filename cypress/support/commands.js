@@ -57,3 +57,6 @@ Cypress.Commands.add('checkImages', () => {
     cy.get('.oxd-userdropdown') // Replace '.element-selector' with the actual selector of the element
       .should('be.visible')     // Use 'be.visible' to assert that the element is visible
   })
+
+  /// <reference types="Cypress" />
+  /// <reference types="cypress-xpath" />
