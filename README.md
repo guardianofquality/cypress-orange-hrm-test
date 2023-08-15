@@ -52,6 +52,36 @@ We explored how to enable video recording during test runs. Please note that thi
 
 To enable these features, make sure to configure the appropriate options in your `cypress.config.js`
 
+## Cypress Learning Series - Day 3
+
+Welcome to Day 3 of the Cypress Learning Series! In today's session, we'll explore several essential concepts that enhance your understanding of Cypress testing. Let's dive in:
+
+## Topics Covered
+
+1. **IntelliSense with Cypress**
+   Learn how to use IntelliSense, a powerful code editing feature, to streamline your Cypress test scripting. IntelliSense provides real-time suggestions and autocompletions, significantly improving your coding efficiency and accuracy.
+
+2. **Force Click vs. Normal Click in Cypress**
+   Discover the nuances between force click and normal click approaches in Cypress. We'll delve into the usage of `{ force: true }` with the `click()` command, enabling robust interactions even when elements are obscured or hidden by other page elements.
+
+3. **Element Visibility: `.should('be.visible')` vs. Selenium's `isDisplayed()`**
+   Delve into the world of element visibility in testing. This segment compares Cypress's `.should('be.visible')` command with Selenium's `isDisplayed()` method. Understand how both mechanisms ensure elements are visible and ready for interaction, resulting in more dependable and user-centric tests.
+
+## Examples
+
+Each topic is accompanied by practical examples that vividly illustrate the discussed concepts. These examples are thoughtfully organized into separate folders for better clarity:
+
+- `command.js`: A demonstration of enabling IntelliSense functionality in Cypress.
+- `BuzzCRM.cy.js`: Real-world scenarios showcasing the distinctions between force click and normal click interactions.
+- `BuzzCRM.cy.js`: A direct comparison between Cypress's `.should('be.visible')` and Selenium's `isDisplayed()` for assessing element visibility.
+
+## Comparison with Selenium
+
+In the `BuzzCRM.cy.js` example, you'll find an insightful comparison between Cypress's `.should('be.visible')` and Selenium's `isDisplayed()` mechanisms concerning element visibility. This comparison underscores how Cypress simplifies element interaction and visibility assertions, contributing to more efficient testing practices.
+
+Feel free to explore the examples and comparisons provided in this session to deepen your understanding of Cypress testing techniques.
+
+
 # How to Contribute
 Contributions are welcome! If you have suggestions or improvements for this project, feel free to submit issues or pull requests.
 
