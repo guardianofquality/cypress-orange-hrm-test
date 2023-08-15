@@ -18,5 +18,8 @@
   "homepage": "https://github.com/guardianofquality/cypress-orange-hrm-test#readme",
   "devDependencies": {
     "cypress": "^12.17.3"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
   }
 }
