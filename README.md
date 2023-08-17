@@ -81,6 +81,27 @@ In the `BuzzCRM.cy.js` example, you'll find an insightful comparison between Cyp
 
 Feel free to explore the examples and comparisons provided in this session to deepen your understanding of Cypress testing techniques.
 
+## Cypress Learning Series - Day 4 & 5
+
+## Topics Covered
+
+1. **Aliasing Elements in Cypress**
+   Discover the power of aliasing in Cypress. Learn how to create and utilize aliases to simplify interactions and assertions across your test scripts. Alias helps create cleaner and more maintainable test code.
+
+2. **Using Fixtures for Test Data**
+   Master the art of managing test data with fixtures. Explore how to load external data from fixture files into your tests, keeping your test data organized, separate, and easy to update.
+
+3. **Generating Comprehensive HTML Reports with cypress-mochawesome-reporter**
+   Elevate your test reporting with the cypress-mochawesome-reporter plugin. Experience visually-rich HTML reports that include screenshots and recordings, making it a valuable resource for stakeholders to understand test outcomes.
+
+## Examples and Practical Demonstrations
+
+Each topic is accompanied by practical examples that showcase the concepts in action. You'll find code snippets, step-by-step guides, and explanations to help you understand and apply these techniques effectively:
+
+- `aliasing`: Hands-on examples demonstrating the benefits of aliasing in Cypress tests.
+- `fixture`: Practical scenarios illustrating the usage of fixtures to manage test data efficiently.
+- `cypress-mochawesome-reporter`: Guide on integrating cypress-mochawesome-reporter for stunning HTML reports with screenshots and recordings.
+
 
 # How to Contribute
 Contributions are welcome! If you have suggestions or improvements for this project, feel free to submit issues or pull requests.
