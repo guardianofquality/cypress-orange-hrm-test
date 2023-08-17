@@ -6,15 +6,15 @@ describe('Buzz Tests on Orange HRM Application', () => {
       const { baseUrlUsername, baseUrlPassword } = testdata;
       // Fill in the login form
       cy.loginHRM(baseUrlUsername,baseUrlPassword)
+      cy.get('a[href="/web/index.php/leave/viewLeaveModule"]').as('leave') // creating alisas
     })
       
     })
 
-    it('Verify Claim module is displayed in Buzz', () => {
-        
-        cy.get('a[href="/web/index.php/claim/viewClaimModule"]').as('ClaimModule') // creating alisas
+    it('Verify Leave module is displayed in Buzz', () => {
+        cy.get('@leave').should('be.visible').click() //using alisas
 
-        cy.get('@ClaimModule').should('be.visible').click() //using alisas
-        cy.get('button[type="submit"]').click
+        cy.get('button[type="submit"]')
+        .should('be.visible').contains('Personal Details')
     })
   })
