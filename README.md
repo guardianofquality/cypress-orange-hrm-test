@@ -102,6 +102,35 @@ Each topic is accompanied by practical examples that showcase the concepts in ac
 - `fixture`: Practical scenarios illustrating the usage of fixtures to manage test data efficiently.
 - `cypress-mochawesome-reporter`: Guide on integrating cypress-mochawesome-reporter for stunning HTML reports with screenshots and recordings.
 
+## Cypress Learning Series - Day 6 Final
+
+## Topics Covered
+
+1. **Retry Execution**
+   Cypress allows retrying failed tests to improve the stability of test execution. We've configured the retry attempts for both `cypress run` and `cypress open` modes in the `cypress.config.js` file:
+
+```json
+{
+  "retries": {
+    // Configure retry attempts for `cypress run`
+      // Default is 0
+      "runMode": 2,
+      // Configure retry attempts for `cypress open`
+      // Default is 0
+      "openMode": 2
+  }
+}
+```
+
+2. **Cross-Browser Testing**
+   Easily run your tests across different browsers using the --browser flag. For instance, to run tests in Firefox:
+   ```npx cypress run --browser firefox --spec "cypress/e2e/CypressDay1/loginOrange.cy.js"```
+3. **Headless Mode Execution**
+   Improve test execution speed by running tests in headless mode using the --headless flag:
+   ```npx cypress run --headless```
+4. **Parallel Execution (Cypress Cloud)**
+   Achieve even faster test execution by leveraging parallel execution in Cypress Cloud. Unfortunately, this feature requires Cypress Cloud:
+   ```npx cypress run --parallel```
 
 # How to Contribute
 Contributions are welcome! If you have suggestions or improvements for this project, feel free to submit issues or pull requests.
@@ -109,5 +138,3 @@ Contributions are welcome! If you have suggestions or improvements for this proj
 Stay tuned for more exciting updates as we continue to explore the world of Cypress and automated testing!
 
 Happy testing! 🚀🔍🌐
-
-Day 1 README | Day 2 README
